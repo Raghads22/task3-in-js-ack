@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Entry Form</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+    <h2>Add New Product</h2>
+    <form id="productEntryForm" class="form-container">
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required />
+        </div>
+
+        <div class="form-group">
+            <label for="productDesc">Description:</label>
+            <textarea id="productDesc" name="productDesc" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="productPrice" />Price:</label>
+            <input type="number" id="productPrice" name="productPrice" required />
+        </div>
+
+        <button type="submit">Submit Product</button>
+    </form>
+
+    <h2>Available Products</h2>
+    <table id="productDisplayTable">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
